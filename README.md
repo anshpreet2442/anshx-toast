@@ -48,47 +48,15 @@ Usage
 
 ### Full Parameters
 
-Parameter
+| Parameter        | Type    | Description                                                            |
+|------------------|---------|------------------------------------------------------------------------|
+| message          | String  | The message to display in the toast.                                   |
+| logo             | String  | URL of the logo image to display.                                     |
+| duration         | Number  | Duration for which the toast will be displayed (in milliseconds). Default is 5000. |
+| progressColor    | String  | The color of the progress bar.                                        |
+| autoColor        | Boolean | Whether to automatically derive colors from the logo. Default is true. |
+| showCloseButton   | Boolean | Whether to show the close button. Default is false.                   |
 
-Type
-
-Description
-
-message
-
-String
-
-The message to display in the toast.
-
-logo
-
-String
-
-URL of the logo image to display.
-
-duration
-
-Number
-
-Duration for which the toast will be displayed (in milliseconds). Default is 5000.
-
-progressColor
-
-String
-
-The color of the progress bar.
-
-autoColor
-
-Boolean
-
-Whether to automatically derive colors from the logo. Default is true.
-
-showCloseButton
-
-Boolean
-
-Whether to show the close button. Default is false.
 
 PHP Integration
 ---------------
