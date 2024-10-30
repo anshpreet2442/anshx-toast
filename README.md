@@ -32,7 +32,7 @@ Usage
 
 ### Basic Example
 
-     // Initialize the Anshx Toast Framework
+          // Initialize the Anshx Toast Framework
         const anshxToastFramework = new AnshxToastFramework();
 
         // Show a "Good Morning" toast on page load
@@ -44,6 +44,7 @@ Usage
                 progressColor: '#4CAF50', // Customize the progress bar color if needed
             });
         };
+     
 
 ### Full Parameters
 
