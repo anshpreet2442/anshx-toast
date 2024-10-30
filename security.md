@@ -6,7 +6,7 @@ If you discover a security vulnerability within this project, please follow thes
 
 1. **Do Not Create an Issue**: To ensure that sensitive information is not publicly disclosed, please do not create a public issue in the repository.
   
-2. **Contact Us**: Instead, send an email to [your-email@example.com] with the following details:
+2. **Contact Us**: Instead, send an email to [admin@srvrhost.xyz] with the following details:
    - A description of the vulnerability
    - Steps to reproduce the issue
    - Any relevant logs or screenshots
