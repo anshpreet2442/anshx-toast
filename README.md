@@ -32,13 +32,18 @@ Usage
 
 ### Basic Example
 
-    const anshxToastFramework = new AnshxToastFramework();
-    anshxToastFramework.showToast({
-        message: "Enhanced Toast",
-        logo: "https://via.placeholder.com/30",
-        duration: 8000,
-        progressColor: '#4CAF50'
-    });
+     // Initialize the Anshx Toast Framework
+        const anshxToastFramework = new AnshxToastFramework();
+
+        // Show a "Good Morning" toast on page load
+        window.onload = function() {
+            anshxToastFramework.showToast({
+                message: "Good Morning!",
+                logo: "https://cdn-icons-png.flaticon.com/128/5776/5776495.png",
+                duration: 5000, // Duration of the toast in milliseconds
+                progressColor: '#4CAF50', // Customize the progress bar color if needed
+            });
+        };
 
 ### Full Parameters
 
