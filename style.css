@@ -1,0 +1,120 @@
+    /* Toast Container and General Styles */
+    .anshx-toast-container {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 9999; /* Ensure it appears on top */
+        width: auto;
+        pointer-events: none;
+    }
+    .anshx-toast-container.top { top: 20px; left: 50%; transform: translateX(-50%); }
+    .anshx-toast-container.bottom { bottom: 20px; left: 50%; transform: translateX(-50%); }
+    .anshx-toast-container.left { left: 20px; top: 50%; transform: translateY(-50%); }
+    .anshx-toast-container.right { right: 20px; top: 50%; transform: translateY(-50%); }
+
+    /* Toast Styles */
+    .anshx-toast {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(15px);
+        padding: 15px;
+        max-width: 350px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 10px 25px rgba(0, 0, 0, 0.2);
+        position: relative;
+        opacity: 1;
+        pointer-events: auto;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        cursor: grab;
+    }
+    .anshx-toast.hidden { transform: translateX(-100%); opacity: 0; }
+
+    /* Progress Bar */
+    .anshx-progress-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 4px;
+        border-radius: 0 0 4px 4px;
+        background-color: var(--anshx-progress-color, #4CAF50);
+        animation: anshx-progress linear forwards;
+    }
+
+    /* Icon Styles */
+    .anshx-sticky-icon, .anshx-close-icon, .anshx-show-button { cursor: pointer; }
+
+    /* Show Button */
+    .anshx-show-button {
+        position: fixed;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        padding: 10px;
+        color: white;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        display: none;
+    }
+
+    /* Animations */
+    @keyframes anshx-progress { from { width: 100%; } to { width: 0; } }
+    
+    
+    
+    #userForm {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            max-width: 500px; /* Maximum width for the form */
+            margin: auto; /* Center the form */
+        }
+
+        label {
+            margin-top: 10px;
+            display: block;
+            font-family: 'Playfair Display', serif;
+            color: darkblue; /* Dark blue color for labels */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: auto; /* Responsive width */
+            min-width: 100%; /* Minimum width to fill container */
+            padding: 10px;
+            border: 2px solid darkblue; /* Dark blue border */
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            transition: all ease-in 0.2s;
+            margin-bottom: 10px;
+            background: white; /* White background for input fields */
+            color: darkblue; /* Dark blue text color */
+            font-family: 'Playfair Display', serif; /* Playfair font */
+        }
+
+        input:focus,
+        textarea:focus {
+            box-shadow: none;
+            outline: none;
+        }
+
+        button {
+            background-color: darkblue; /* Dark blue background */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: 'Playfair Display', serif; /* Playfair font */
+        }
+
+        button:hover {
+            background-color: #1e90ff; /* Lighter blue on hover */
+        }
