@@ -17,7 +17,7 @@ Features
 Demo
 ----
 
-Check out the live demo [here](https://anshx.tech/af/form.php).
+Check out the live demo [here](https://anshx.tech/af/form.php) or [in this github page](https://anshpreet2442.github.io/anshx-toast/test.html).
 
 Installation
 ------------
