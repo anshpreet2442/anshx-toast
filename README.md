@@ -24,8 +24,8 @@ Installation
 
 To use the Anshx Toast Framework, include the following in your HTML:
 
-    <link rel="stylesheet" href="path/to/style.css">
-    <script src="path/to/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/anshpreet2442/anshx-toast@main/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/anshpreet2442/anshx-toast@main/script.js"></script>
 
 Usage
 -----
